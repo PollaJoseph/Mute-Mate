@@ -14,7 +14,7 @@ It is dedicated to supporting the deaf and mute community in Egypt, aiming to br
   <table>
     <tr>
       <td align="center">
-        <img src="assets/polla.jpeg" alt="Polla Joseph Labeeb Aziz" width="120" style="border-radius:50%;"/><br>
+        <img src="assets/polla.jpg" alt="Polla Joseph Labeeb Aziz" width="120" style="border-radius:50%;"/><br>
         <b>Polla Joseph<br>Labeeb Aziz</b>
       </td>
       <td align="center">
