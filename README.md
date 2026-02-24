@@ -85,7 +85,7 @@ This is a graduation project developed by the **Class of 2026** students from th
 ## 🚀 Installation & Local Setup
 *(Instructions will be added here once the project architecture is finalized.)*
 
-1. Clone the repository: `git clone https://github.com/your-repo/mutemate.git`
+1. Clone the repository: `git clone https://github.com/PollaJoseph/mutemate.git`
 2. Install dependencies...
 3. Run the application...
 
