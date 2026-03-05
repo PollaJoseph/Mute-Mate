@@ -67,7 +67,7 @@ This is a graduation project developed by the **Class of 2026** students from th
     </td>
     <td align="center">
       <img src="assets/Abdelraman.jpg" alt="Abdelraman Mohamed" width="100" style="border-radius:50%;"/><br>
-      <b>Abdelrahman Mohamed<br>Anwer</b>
+      <b>Shahd Ragab<br>Saad</b>
     </td>
     <td align="center">
       <img src="assets/assem.jpg" alt="Assem Ayman Mohamed Ibrahim" width="100" style="border-radius:50%;"/><br>
