@@ -1,9 +1,9 @@
 <p align="center">
   <img src="assets/university_logo.png" alt="Helwan National University Logo" width="120" style="margin-right: 50px;"/>
-  <img src="assets/app_logo.png" alt="MuteMate App Logo" width="120"/>
+  <img src="assets/app_logo.png" alt="Mute Mate App Logo" width="120"/>
 </p>
 
-<h1 align="center">MuteMate</h1>
+<h1 align="center">Mute Mate</h1>
 
 <p align="center">
   <em>Breaking communication barriers and creating equal opportunities for the deaf and mute community in Egypt.</em>
@@ -18,7 +18,7 @@
 
 ---
 
-## 🌍 Why MuteMate?  
+## 🌍 Why Mute Mate?  
 In Egypt, many members of the deaf and mute community face daily challenges in expressing themselves and interacting with society. **MuteMate** seeks to bridge this gap by offering innovative digital tools and technologies that ensure their voices are heard, respected, and understood.  
 
 ## 🎯 Project Goals  
@@ -46,6 +46,16 @@ In Egypt, many members of the deaf and mute community face daily challenges in e
 
 ## 👩‍🎓 About the Project  
 This is a graduation project developed by the **Class of 2026** students from the **BIDT (Business Information & Digital Transformation)** program at **Helwan National University**.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="assets/Dr.Ahmed Abd-Elwahab.jpg" alt="Dr.Ahmed Abd-Elwahab" width="120" style="border-radius:50%;"/><br>
+      <b>Dr.Ahmed Mohamed Abd-Elwahab</b><br>
+      <span>BIS</span>
+    </td>
+  </tr>
+</table>
 
 ### 👥 Meet the Team  
 
@@ -85,11 +95,11 @@ This is a graduation project developed by the **Class of 2026** students from th
 ## 🚀 Installation & Local Setup
 *(Instructions will be added here once the project architecture is finalized.)*
 
-1. Clone the repository: `git clone https://github.com/PollaJoseph/mutemate.git`
+1. Clone the repository: `git clone https://github.com/PollaJoseph/mute-mate.git`
 2. Install dependencies...
 3. Run the application...
 
 ---
 <p align="center">
-  Developed with ❤️ by the MuteMate Team
+  Developed with ❤️ by the Mute Mate Team
 </p>
