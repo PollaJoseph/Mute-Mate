@@ -49,8 +49,18 @@ class _SplashViewState extends State<SplashView> {
               filterQuality: FilterQuality.high,
             ),
           ),
-          Center(child: Image.asset(Constants.LogoPath)),
-          Center(child: CircularProgressIndicator(color: Colors.white)),
+          Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Image.asset(Constants.LogoPath),
+                const SizedBox(height: 24),
+                const CircularProgressIndicator(color: Colors.white),
+              ],
+            ),
+          ),
         ],
       ),
     );

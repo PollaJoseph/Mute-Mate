@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Constants {
   // Images
   static const String LightBackgroundPath =
@@ -13,4 +15,18 @@ class Constants {
       "lib/Assets/Images/SecondOnboardingImage.png";
   static const String ThirdOnboardingImagePath =
       "lib/Assets/Images/ThirdOnboardingImage.png";
+  static const String SignUpAvatar = "lib/Assets/Images/SignUpAvatar.png";
+
+  // Icons
+  static const String GoogleIcon = "lib/Assets/Icons/google.png";
+  static const String FacebookIcon = "lib/Assets/Icons/facebook.png";
+  static const String AppleIcon = "lib/Assets/Icons/apple.png";
+
+  static double screenWidth(BuildContext context) {
+    return MediaQuery.of(context).size.width;
+  }
+
+  static double screenHeight(BuildContext context) {
+    return MediaQuery.of(context).size.height;
+  }
 }
