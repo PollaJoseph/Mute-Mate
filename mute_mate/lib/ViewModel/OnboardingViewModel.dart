@@ -17,9 +17,9 @@ class OnboardingViewModel extends ChangeNotifier {
       illustrationPath: Constants.FirstOnboardingImagePath,
     ),
     const OnboardingModel(
-      title: "Real-time Sign Translation",
+      title: "Accurate Clinical Insights",
       description:
-          "Our advanced AI captures your sign language gestures seamlessly and translates them into instant medical insights.",
+          "Clear communication is vital for correct diagnoses. Instantly translate complex medical symptoms and health histories into exact clinical terms that doctors and nurses can trust.",
       illustrationPath: Constants.SecondOnboardingImagePath,
     ),
     const OnboardingModel(

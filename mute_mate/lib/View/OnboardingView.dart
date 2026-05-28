@@ -58,8 +58,6 @@ class _OnboardingViewState extends State<OnboardingView> {
                   bottom: false,
                   child: Column(
                     children: [
-                      const SizedBox(height: 10),
-
                       Expanded(
                         child: PageView.builder(
                           controller: vm.pageController,
@@ -70,8 +68,7 @@ class _OnboardingViewState extends State<OnboardingView> {
                             return Column(
                               children: [
                                 Container(
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.9,
+                                  width: MediaQuery.of(context).size.width,
                                   height:
                                       MediaQuery.of(context).size.height * 0.42,
                                   decoration: const BoxDecoration(
