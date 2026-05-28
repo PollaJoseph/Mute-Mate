@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mute_mate/View/SplashScreen.dart';
+import 'package:mute_mate/View/SplashView.dart';
 
 void main() {
   runApp(const MyApp());
