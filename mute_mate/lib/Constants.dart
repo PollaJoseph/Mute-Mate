@@ -22,6 +22,28 @@ class Constants {
   static const String FacebookIcon = "lib/Assets/Icons/facebook.png";
   static const String AppleIcon = "lib/Assets/Icons/apple.png";
 
+  static const String SelectedHomeIcon =
+      "lib/Assets/Icons/SelectedHomeIcon.png";
+  static const String SelectedSOSIcon = "lib/Assets/Icons/SelectedSOSIcon.png";
+  static const String SelectedChatIcon =
+      "lib/Assets/Icons/SelectedChatIcon.png";
+  static const String SelectedStoreIcon =
+      "lib/Assets/Icons/SelectedStoreIcon.png";
+  static const String SelectedProfileIcon =
+      "lib/Assets/Icons/SelectedProfileIcon.png";
+
+  static const String UnselectedHomeIcon =
+      "lib/Assets/Icons/SelectedHomeIcon.png";
+  static const String UnselectedSOSIcon =
+      "lib/Assets/Icons/SelectedSOSIcon.png";
+  static const String UnselectedChatIcon =
+      "lib/Assets/Icons/SelectedChatIcon.png";
+  static const String UnselectedStoreIcon =
+      "lib/Assets/Icons/SelectedStoreIcon.png";
+  static const String UnselectedProfileIcon =
+      "lib/Assets/Icons/SelectedProfileIcon.png";
+
+  // Dimensions
   static double screenWidth(BuildContext context) {
     return MediaQuery.of(context).size.width;
   }

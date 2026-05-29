@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-
-class NavigationItemData {
-  final Widget icon;
-  final String label;
-
-  const NavigationItemData({required this.icon, required this.label});
-}
+import 'package:mute_mate/Model/NavigationItemData.dart';
 
 class CustomNavigationBar extends StatelessWidget {
   final int currentIndex;
@@ -25,12 +19,8 @@ class CustomNavigationBar extends StatelessWidget {
       height: 76,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        // The distinct linear green-to-blue gradient background from image_28c743.png
         gradient: const LinearGradient(
-          colors: [
-            Color(0xFF7CB661), // Vibrant Green top-left
-            Color(0xFF2B6B99), // Deep Blue bottom-right
-          ],
+          colors: [Color(0xFF7CB661), Color(0xFF2B6B99)],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
@@ -49,6 +39,10 @@ class CustomNavigationBar extends StatelessWidget {
           final isSelected = currentIndex == index;
           final item = items[index];
 
+          final String currentAssetPath = isSelected
+              ? item.activeIconPath
+              : item.inactiveIconPath;
+
           return GestureDetector(
             onTap: () => onTap(index),
             behavior: HitTestBehavior.opaque,
@@ -60,27 +54,27 @@ class CustomNavigationBar extends StatelessWidget {
                 vertical: 8,
               ),
               decoration: BoxDecoration(
-                // Selected item turns into the bright solid white capsule
                 color: isSelected ? Colors.white : Colors.transparent,
                 borderRadius: BorderRadius.circular(28),
               ),
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Icon Layer (Thematic tint adjustment based on active selection)
-                  Theme(
-                    data: ThemeData(
-                      iconTheme: IconThemeData(
+                  Image.asset(
+                    currentAssetPath,
+                    width: 24,
+                    height: 24,
+                    fit: BoxFit.contain,
+                    errorBuilder: (context, error, stackTrace) {
+                      return Icon(
+                        isSelected ? Icons.star : Icons.star_border,
                         color: isSelected
                             ? const Color(0xFF2B6B99)
-                            : Colors.white.withOpacity(0.65),
-                        size: 24,
-                      ),
-                    ),
-                    child: item.icon,
+                            : Colors.white60,
+                      );
+                    },
                   ),
 
-                  // Text Label expands / collapses conditionally with a smooth clip animation
                   AnimatedCrossFade(
                     firstChild: Row(
                       mainAxisSize: MainAxisSize.min,
@@ -89,9 +83,7 @@ class CustomNavigationBar extends StatelessWidget {
                         Text(
                           item.label,
                           style: const TextStyle(
-                            color: Color(
-                              0xFF2B6B99,
-                            ), // Matching text color label from mockup
+                            color: Color(0xFF2B6B99),
                             fontWeight: FontWeight.bold,
                             fontSize: 15,
                           ),

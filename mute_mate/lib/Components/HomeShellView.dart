@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mute_mate/Components/NavigationItemData.dart';
+import 'package:mute_mate/Model/NavigationItemData.dart';
 import 'package:mute_mate/View/ChatsView.dart';
 import 'package:mute_mate/View/EmergencyView.dart';
 import 'package:mute_mate/View/HomeView.dart';
@@ -30,12 +31,10 @@ class _HomeShellViewState extends State<HomeShellView> {
       backgroundColor: const Color(0xFFF4F7F6),
       body: Stack(
         children: [
-          // 1. Core Page Layer Content
           Positioned.fill(
             child: IndexedStack(index: _currentIndex, children: _pages),
           ),
 
-          // 2. Custom Navigation Bar component floating on top at the bottom
           Positioned(
             left: 16,
             right: 16,
@@ -48,34 +47,29 @@ class _HomeShellViewState extends State<HomeShellView> {
                 });
               },
               items: [
-                const NavigationItemData(
-                  icon: Icon(Icons.home_outlined),
+                NavigationItemData(
+                  activeIconPath: 'assets/icons/home_active.png',
+                  inactiveIconPath: 'assets/icons/home_inactive.png',
                   label: "Home",
                 ),
                 NavigationItemData(
-                  icon: Text(
-                    "SOS",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w900,
-                      letterSpacing: -0.5,
-                      color: _currentIndex == 1
-                          ? const Color(0xFF2B6B99)
-                          : Colors.white.withOpacity(0.65),
-                    ),
-                  ),
+                  activeIconPath: 'assets/icons/sos_active.png',
+                  inactiveIconPath: 'assets/icons/sos_inactive.png',
                   label: "Emergency",
                 ),
-                const NavigationItemData(
-                  icon: Icon(Icons.chat_bubble_outline),
+                NavigationItemData(
+                  activeIconPath: 'assets/icons/chats_active.png',
+                  inactiveIconPath: 'assets/icons/chats_inactive.png',
                   label: "Chats",
                 ),
-                const NavigationItemData(
-                  icon: Icon(Icons.storefront_outlined),
+                NavigationItemData(
+                  activeIconPath: 'assets/icons/store_active.png',
+                  inactiveIconPath: 'assets/icons/store_inactive.png',
                   label: "Store",
                 ),
-                const NavigationItemData(
-                  icon: Icon(Icons.account_circle_outlined),
+                NavigationItemData(
+                  activeIconPath: 'assets/icons/profile_active.png',
+                  inactiveIconPath: 'assets/icons/profile_inactive.png',
                   label: "Profile",
                 ),
               ],

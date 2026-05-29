@@ -1,8 +1,11 @@
-import 'package:flutter/material.dart';
-
 class NavigationItemData {
-  final Widget icon;
+  final String activeIconPath;
+  final String inactiveIconPath;
   final String label;
 
-  const NavigationItemData({required this.icon, required this.label});
+  const NavigationItemData({
+    required this.activeIconPath,
+    required this.inactiveIconPath,
+    required this.label,
+  });
 }
