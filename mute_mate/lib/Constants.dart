@@ -16,6 +16,7 @@ class Constants {
   static const String ThirdOnboardingImagePath =
       "lib/Assets/Images/ThirdOnboardingImage.png";
   static const String SignUpAvatar = "lib/Assets/Images/SignUpAvatar.png";
+  static const String LoginAvatar = "lib/Assets/Images/LoginAvatar.png";
 
   // Icons
   static const String GoogleIcon = "lib/Assets/Icons/google.png";

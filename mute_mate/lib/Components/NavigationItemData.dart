@@ -62,8 +62,8 @@ class CustomNavigationBar extends StatelessWidget {
                 children: [
                   Image.asset(
                     currentAssetPath,
-                    width: 24,
-                    height: 24,
+                    width: 26,
+                    height: 26,
                     fit: BoxFit.contain,
                     errorBuilder: (context, error, stackTrace) {
                       return Icon(

@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:mute_mate/Constants.dart';
 
 class EmergencyView extends StatelessWidget {
   const EmergencyView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: Image.asset(
+              Constants.LightBackgroundPath,
+              fit: BoxFit.cover,
+              filterQuality: FilterQuality.high,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
