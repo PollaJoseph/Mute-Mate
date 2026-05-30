@@ -33,15 +33,15 @@ class Constants {
       "lib/Assets/Icons/SelectedProfileIcon.png";
 
   static const String UnselectedHomeIcon =
-      "lib/Assets/Icons/SelectedHomeIcon.png";
+      "lib/Assets/Icons/UnselectedHomeIcon.png";
   static const String UnselectedSOSIcon =
-      "lib/Assets/Icons/SelectedSOSIcon.png";
+      "lib/Assets/Icons/UnselectedSOSIcon.png";
   static const String UnselectedChatIcon =
-      "lib/Assets/Icons/SelectedChatIcon.png";
+      "lib/Assets/Icons/UnslectedChatIcon.png";
   static const String UnselectedStoreIcon =
-      "lib/Assets/Icons/SelectedStoreIcon.png";
+      "lib/Assets/Icons/UnselectedStoreIcon.png";
   static const String UnselectedProfileIcon =
-      "lib/Assets/Icons/SelectedProfileIcon.png";
+      "lib/Assets/Icons/UnselectedProfileIcon.png";
 
   // Dimensions
   static double screenWidth(BuildContext context) {

@@ -17,7 +17,7 @@ class CustomNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 76,
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [Color(0xFF7CB661), Color(0xFF2B6B99)],
@@ -50,7 +50,7 @@ class CustomNavigationBar extends StatelessWidget {
               duration: const Duration(milliseconds: 300),
               curve: Curves.easeInOutCubic,
               padding: EdgeInsets.symmetric(
-                horizontal: isSelected ? 18 : 14,
+                horizontal: isSelected ? 14 : 12,
                 vertical: 8,
               ),
               decoration: BoxDecoration(
@@ -80,12 +80,28 @@ class CustomNavigationBar extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         const SizedBox(width: 8),
-                        Text(
-                          item.label,
-                          style: const TextStyle(
-                            color: Color(0xFF2B6B99),
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15,
+                        ShaderMask(
+                          blendMode: BlendMode.srcIn,
+                          shaderCallback: (bounds) =>
+                              const LinearGradient(
+                                colors: [Color(0xFF7CB661), Color(0xFF2B6B99)],
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                              ).createShader(
+                                Rect.fromLTWH(
+                                  0,
+                                  0,
+                                  bounds.width,
+                                  bounds.height,
+                                ),
+                              ),
+                          child: Text(
+                            item.label,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                            ),
                           ),
                         ),
                       ],

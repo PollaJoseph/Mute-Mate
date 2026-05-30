@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mute_mate/Components/NavigationItemData.dart';
+import 'package:mute_mate/Constants.dart';
 import 'package:mute_mate/Model/NavigationItemData.dart';
 import 'package:mute_mate/View/ChatsView.dart';
 import 'package:mute_mate/View/EmergencyView.dart';
@@ -48,28 +49,28 @@ class _HomeShellViewState extends State<HomeShellView> {
               },
               items: [
                 NavigationItemData(
-                  activeIconPath: 'assets/icons/home_active.png',
-                  inactiveIconPath: 'assets/icons/home_inactive.png',
+                  activeIconPath: Constants.SelectedHomeIcon,
+                  inactiveIconPath: Constants.UnselectedHomeIcon,
                   label: "Home",
                 ),
                 NavigationItemData(
-                  activeIconPath: 'assets/icons/sos_active.png',
-                  inactiveIconPath: 'assets/icons/sos_inactive.png',
+                  activeIconPath: Constants.SelectedSOSIcon,
+                  inactiveIconPath: Constants.UnselectedSOSIcon,
                   label: "Emergency",
                 ),
                 NavigationItemData(
-                  activeIconPath: 'assets/icons/chats_active.png',
-                  inactiveIconPath: 'assets/icons/chats_inactive.png',
+                  activeIconPath: Constants.SelectedChatIcon,
+                  inactiveIconPath: Constants.UnselectedChatIcon,
                   label: "Chats",
                 ),
                 NavigationItemData(
-                  activeIconPath: 'assets/icons/store_active.png',
-                  inactiveIconPath: 'assets/icons/store_inactive.png',
+                  activeIconPath: Constants.SelectedStoreIcon,
+                  inactiveIconPath: Constants.UnselectedStoreIcon,
                   label: "Store",
                 ),
                 NavigationItemData(
-                  activeIconPath: 'assets/icons/profile_active.png',
-                  inactiveIconPath: 'assets/icons/profile_inactive.png',
+                  activeIconPath: Constants.SelectedProfileIcon,
+                  inactiveIconPath: Constants.UnselectedProfileIcon,
                   label: "Profile",
                 ),
               ],
