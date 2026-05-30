@@ -16,6 +16,17 @@ class ProfileView extends StatelessWidget {
               filterQuality: FilterQuality.high,
             ),
           ),
+          Positioned(
+            bottom: -20,
+            right: -10,
+            child: Opacity(
+              opacity: 0.7,
+              child: Image.asset(
+                Constants.StethoscopePath,
+                width: MediaQuery.of(context).size.width * 0.6,
+              ),
+            ),
+          ),
         ],
       ),
     );
