@@ -35,7 +35,7 @@ class _EmergencyViewState extends State<EmergencyView>
 
   @override
   void dispose() {
-    _pulseController.dispose(); // Always clean up your controllers!
+    _pulseController.dispose();
     super.dispose();
   }
 
@@ -93,7 +93,6 @@ class _EmergencyViewState extends State<EmergencyView>
                       ),
                     ),
                   ),
-
                   const Spacer(),
                   Consumer<EmergencyViewModel>(
                     builder: (context, vm, child) {

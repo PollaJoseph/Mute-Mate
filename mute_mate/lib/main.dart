@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mute_mate/View/HomeView.dart';
 import 'package:mute_mate/View/SplashView.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const SplashView(),
+      home: const HomeView(),
     );
   }
 }
