@@ -1,4 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Microphone permission required by speech_to_text -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- Internet permission for potential TTS fallback -->
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:label="Mute Mate"
         android:name="${applicationName}"
