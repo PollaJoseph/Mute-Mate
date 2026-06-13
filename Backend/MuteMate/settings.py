@@ -32,6 +32,7 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv(), default='127.0.0.1,localhost
 # Application definition
 
 INSTALLED_APPS = [
+    'unfold',  # Make sure unfold is before django.contrib.admin
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'users',
     'emarket',
+    'chat',
 ]
 
 MIDDLEWARE = [
@@ -79,8 +81,11 @@ WSGI_APPLICATION = 'MuteMate.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django_mongodb_backend',
+        'NAME': 'mutemate_db',
+        'CLIENT': {
+            'host': config('MONGO_URI', default='mongodb://localhost:27017/'),
+        },
     }
 }
 
@@ -134,6 +139,17 @@ JWT_SECRET_KEY = SECRET_KEY
 JWT_ACCESS_EXPIRATION_DAYS = 1
 JWT_REFRESH_EXPIRATION_DAYS = 7
 
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header',
+            'description': "Format: 'Bearer <your_token>'"
+        }
+    }
+}
+
 # Email configuration
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -141,3 +157,10 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
+
+# Use MongoDB's ObjectId as the default primary key type
+DEFAULT_AUTO_FIELD = 'django_mongodb_backend.fields.ObjectIdAutoField'
+
+# Media files configuration (for uploaded images)
+MEDIA_URL = '/MuteMedia/'
+MEDIA_ROOT = BASE_DIR / 'MuteMedia'
