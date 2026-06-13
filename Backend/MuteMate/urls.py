@@ -35,7 +35,8 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('Admin/', admin.site.urls),
-    path('Users/', include('users.urls', namespace='users')),
+    path('Api/Users/', include('users.urls', namespace='users')),
+    path('Api/Emarket/', include('emarket.urls')),
     
     # Swagger endpoints
     path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),

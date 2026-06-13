@@ -4,3 +4,4 @@
 *.pyc
 Backend/db.sqlite3
 Backend/.env
+Backend/emarket/migrations/0001_initial.py
