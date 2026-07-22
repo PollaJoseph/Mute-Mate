@@ -50,7 +50,7 @@ This is a graduation project developed by the **Class of 2026** students from th
 <table align="center">
   <tr>
     <td align="center">
-      <img src="assets/Dr.Ahmed Abd-Elwahab.jpg" alt="Dr.Ahmed Abd-Elwahab" width="120" style="border-radius:50%;"/><br>
+      <img src="assets/Abdelraman.jpg" alt="Dr.Ahmed Abd-Elwahab" width="120" style="border-radius:50%;"/><br>
       <b>Dr.Ahmed Mohamed Abd-Elwahab</b><br>
       <span>BIS</span>
     </td>
