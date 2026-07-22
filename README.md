@@ -66,8 +66,8 @@ This is a graduation project developed by the **Class of 2026** students from th
       <b>Polla Joseph<br>Labeeb Aziz</b>
     </td>
     <td align="center">
-      <img src="assets/Shahd .jpg" alt="Shahd Ragab" width="100" style="border-radius:50%;"/><br>
-      <b>Shahd Ragab<br>Saad</b>
+      <img src="assets/Abdelrahman.jpg" alt="Abdulrahman Mohamed" width="100" style="border-radius:50%;"/><br>
+      <b>Abdulrahman Mohamed<br>Anwer</b>
     </td>
     <td align="center">
       <img src="assets/assem.jpg" alt="Assem Ayman Mohamed Ibrahim" width="100" style="border-radius:50%;"/><br>
