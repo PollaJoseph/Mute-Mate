@@ -74,18 +74,9 @@ This is a graduation project developed by the **Class of 2026** students from th
       <b>Assem Ayman<br>Mohamed Ibrahim</b>
     </td>
   </tr>
-  <tr>
-    <td align="center">
-      <img src="assets/hager.jpg" alt="Hager Galal Ahmed Galal" width="100" style="border-radius:50%;"/><br>
-      <b>Hager Galal<br>Ahmed Galal</b>
-    </td>
     <td align="center">
       <img src="assets/marllen.jpg" alt="Marllen Sery Saleh Nakhla" width="100" style="border-radius:50%;"/><br>
       <b>Marllen Sery<br>Saleh Nakhla</b>
-    </td>
-    <td align="center">
-      <img src="assets/omnia.jpg" alt="Omnia Hussein Saad Mahmoud" width="100" style="border-radius:50%;"/><br>
-      <b>Omnia Hussein<br>Saad Mahmoud</b>
     </td>
   </tr>
 </table>
