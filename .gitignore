@@ -1,0 +1,7 @@
+/Backend/.idea
+/Backend/MuteMate/__pycache__
+/Backend/users/__pycache__
+*.pyc
+Backend/db.sqlite3
+Backend/.env
+Backend/emarket/migrations/0001_initial.py
