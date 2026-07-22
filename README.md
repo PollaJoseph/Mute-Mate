@@ -69,10 +69,6 @@ This is a graduation project developed by the **Class of 2026** students from th
       <img src="assets/Abdelraman.jpg" alt="Abdulrahman Mohamed" width="100" style="border-radius:50%;"/><br>
       <b>Abdulrahman Mohamed<br>Anwer</b>
     </td>
-    <td align="center">
-      <img src="assets/assem.jpg" alt="Assem Ayman Mohamed Ibrahim" width="100" style="border-radius:50%;"/><br>
-      <b>Assem Ayman<br>Mohamed Ibrahim</b>
-    </td>
   </tr>
     <td align="center">
       <img src="assets/marllen.jpg" alt="Marllen Sery Saleh Nakhla" width="100" style="border-radius:50%;"/><br>
