@@ -62,6 +62,10 @@ This is a graduation project developed by the **Class of 2026** students from th
 <table align="center">
   <tr>
     <td align="center">
+      <img src="assets/marllen.jpg" alt="Marllen Sery Saleh Nakhla" width="100" style="border-radius:50%;"/><br>
+      <b>Marllen Sery<br>Saleh Nakhla</b>
+    </td>
+    <td align="center">
       <img src="assets/polla.jpg" alt="Polla Joseph Labeeb Aziz" width="100" style="border-radius:50%;"/><br>
       <b>Polla Joseph<br>Labeeb Aziz</b>
     </td>
@@ -69,10 +73,7 @@ This is a graduation project developed by the **Class of 2026** students from th
       <img src="assets/Abdelraman.jpg" alt="Abdulrahman Mohamed" width="100" style="border-radius:50%;"/><br>
       <b>Abdulrahman Mohamed<br>Anwer</b>
     </td>
-    <td align="center">
-      <img src="assets/marllen.jpg" alt="Marllen Sery Saleh Nakhla" width="100" style="border-radius:50%;"/><br>
-      <b>Marllen Sery<br>Saleh Nakhla</b>
-    </td>
+    
   </tr>
 </table>
 
